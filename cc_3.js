@@ -81,4 +81,20 @@ feedback.push({
 });
 console.log("Added feedback", JSON.stringify(feedback));
 
+/////////////////////////////////////////
+// Task 5: Inventory Management System //
+/////////////////////////////////////////
 
+console.log('--------------------------------------');
+console.log('Task 5: Inventory Management System');
+
+let inventory = {
+    itemName: "Water Bottle",
+    stockCount: 550,
+    price: 1.99,
+    calculateTotalValue: function(){
+        return this.stockCount * this.price;
+    }
+};
+console.log("Initial inventory", inventory);
+console.log("Total Value", inventory.calculateTotalValue());
