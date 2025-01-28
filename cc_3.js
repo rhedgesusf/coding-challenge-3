@@ -51,5 +51,34 @@ console.log("Updated Employee Performance Score", employee);
 employee.promotionEligible = false;
 console.log("Added Promotion Eligibility", employee);
 
+///////////////////////////////////////
+// Task 4: Customer Feedback Records //
+///////////////////////////////////////
+
+console.log('--------------------------------------');
+console.log('Task 4: Customer Feedback Records');
+
+let feedback = [{
+    customerName: "Bill Billy",
+    feedbackText: "Better luck next time!",
+    rating: 1
+},{
+    customerName: "Jon Jones",
+    feedbackText: "Amazing Job!",
+    rating: 10
+},{
+    customerName: "John Cena",
+    feedbackText: "Excellent Work!",
+    rating: 9
+}];
+console.log("Initial Feedback", feedback);
+console.log("Initial Feedback", JSON.stringify(feedback));
+
+feedback.push({
+    customerName: "Mike Miller",
+    feedbackText: "You'll get it next time!",
+    rating: 0
+});
+console.log("Added feedback", JSON.stringify(feedback));
 
 
