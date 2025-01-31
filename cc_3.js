@@ -11,6 +11,7 @@ console.log("Initial Prices", prices);
 prices.push(28.94);
 console.log("Added Price", prices);
 
+// Shift removes first in array
 prices.shift();
 console.log("Final Prices", prices);
 
@@ -24,9 +25,11 @@ console.log('Task 2: Modifying Customer Orders');
 let orders = [51, 84, 11, 95, 107];
 console.log("Initial Orders", orders);
 
+// Increase third quantity by 5
 orders[2] += 5;
 console.log("Added 5 to third order", orders);
 
+// Calculate Sum
 let ordersTotal = orders.reduce((sum, quantity) => sum + quantity, 0);
 console.log("Total order quantity", ordersTotal);
 
@@ -74,12 +77,13 @@ let feedback = [{
 console.log("Initial Feedback", feedback);
 console.log("Initial Feedback", JSON.stringify(feedback));
 
+
 feedback.push({
     customerName: "Mike Miller",
     feedbackText: "You'll get it next time!",
     rating: 0
 });
-console.log("Added feedback", JSON.stringify(feedback));
+console.log("Added feedback", JSON.stringify(feedback)); // JSON.stringify converts javascript to a JSON string
 
 /////////////////////////////////////////
 // Task 5: Inventory Management System //
@@ -96,5 +100,6 @@ let inventory = {
         return this.stockCount * this.price;
     }
 };
+
 console.log("Initial inventory", inventory);
 console.log("Total Value", inventory.calculateTotalValue());
